@@ -1,0 +1,15 @@
+{
+  "name": "example",
+  "version": "1.0.0",
+  "description": "Simple NodeJs app featureing expres",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Kai Grassnick",
+  "copyright": "",
+  "license": "UNLICENSED",
+  "dependencies": {
+    "express": "^4.16.3"
+  }
+}

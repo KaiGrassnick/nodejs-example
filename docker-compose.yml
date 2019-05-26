@@ -1,0 +1,14 @@
+# this file is for dev only
+version: '3'
+
+services:
+    app: # name of this service / name of container
+        image: node:10-jessie # image. We use a default base image. This would be a custom image afterwards
+        # build:
+        #    context: .
+        working_dir: "/data"
+        ports:
+            - "80:80" # map internal port 80 to port 80 on this host
+        volumes:
+            - ./:/data # mount the whole directory so we sync data back and forth
+        command: ["tail", "-f", "/dev/null"] # this command lets the container running, doing nothing
